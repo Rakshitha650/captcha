@@ -12,7 +12,9 @@ This service is used to validate the Captcha in the Login flow.
 
 Below is the config key name format to provide secret key for any modules.
 
-`mosip.captcha.secret.<module-name>=secret-key-generated-for-the-module`
+`mosip.captcha.secret.<modulename>=secret-key-generated-for-the-module`
+
+NOTE: Module name shouldn't contain any `-` or `_` .
 
 Eg: mosip.captcha.secret.preregistration=secret-key-generated-for-the-preregistration-module
 
