@@ -240,8 +240,12 @@ updateStrategy:
 ##   - name: FOO
 ##     value: "bar"
 ##
-extraEnvVars: []
-
+extraEnvVars: |
+  - name: MOSIP_CAPTCHA_SECRET_PREREGISTRATION
+    valueFrom:
+      secretKeyRef:
+        name: mosip-captcha
+        key: prereg-captcha-secret-key
 ## ConfigMap with extra environment variables that used
 ##
 extraEnvVarsCM: []
