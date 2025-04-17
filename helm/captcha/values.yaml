@@ -241,7 +241,7 @@ updateStrategy:
 ##     value: "bar"
 ##
 extraEnvVars: |
-  - name: MOSIP_CAPTCHA_SECRET_PREREGISTRATION
+  - name: MOSIP_CAPTCHA_GOOGLERECAPTCHAV2_SECRET_PREREGISTRATION
     valueFrom:
       secretKeyRef:
         name: mosip-captcha
